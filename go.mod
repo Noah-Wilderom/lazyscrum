@@ -1,4 +1,4 @@
-module lazyscrum
+module github.com/Noah-Wilderom/lazyscrum
 
 go 1.26.1
 

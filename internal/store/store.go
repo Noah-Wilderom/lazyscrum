@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"lazyscrum/internal/model"
+	"github.com/Noah-Wilderom/lazyscrum/internal/model"
 )
 
 // hashString returns the hex-encoded SHA256 hash of s, taking only the first

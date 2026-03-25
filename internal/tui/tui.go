@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"lazyscrum/internal/model"
-	"lazyscrum/internal/store"
-	"lazyscrum/internal/tracker"
+	"github.com/Noah-Wilderom/lazyscrum/internal/model"
+	"github.com/Noah-Wilderom/lazyscrum/internal/store"
+	"github.com/Noah-Wilderom/lazyscrum/internal/tracker"
 
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/textinput"
@@ -49,11 +49,11 @@ type Model struct {
 	state      *model.State
 	storePath  string
 	projectDir string
-	cursor    int
-	pane      pane
-	mode      mode
-	width     int
-	height    int
+	cursor     int
+	pane       pane
+	mode       mode
+	width      int
+	height     int
 
 	// Form fields
 	formFields    [fieldCount]textinput.Model
@@ -432,7 +432,7 @@ func (m Model) View() string {
 	}
 
 	// Calculate available dimensions
-	availWidth := m.width - 4 // account for appStyle padding
+	availWidth := m.width - 4   // account for appStyle padding
 	availHeight := m.height - 4 // account for appStyle padding, title, and help
 
 	// Title bar
@@ -449,7 +449,7 @@ func (m Model) View() string {
 	}
 
 	// Render panes
-	listContent := m.renderList(listWidth-4, paneHeight-2) // account for border + padding
+	listContent := m.renderList(listWidth-4, paneHeight-2)       // account for border + padding
 	detailContent := m.renderDetail(detailWidth-6, paneHeight-2) // account for border + padding
 
 	var listPaneView, detailPaneView string

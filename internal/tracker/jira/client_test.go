@@ -284,7 +284,7 @@ func TestExtractAcceptanceCriteriaWithRichText(t *testing.T) {
 								Type: "paragraph",
 								Content: []adfNode{
 									{Type: "text", Text: "Email sent to "},
-									{Type: "text", Text: "support@fanstr.nl"},
+									{Type: "text", Text: "support@example.com"},
 								},
 							},
 						},
@@ -298,7 +298,7 @@ func TestExtractAcceptanceCriteriaWithRichText(t *testing.T) {
 	if len(criteria) != 1 {
 		t.Fatalf("expected 1 criterion, got %d", len(criteria))
 	}
-	if criteria[0] != "Email sent to support@fanstr.nl" {
-		t.Errorf("expected 'Email sent to support@fanstr.nl', got '%s'", criteria[0])
+	if criteria[0] != "Email sent to support@example.nl" {
+		t.Errorf("expected 'Email sent to support@example.com', got '%s'", criteria[0])
 	}
 }

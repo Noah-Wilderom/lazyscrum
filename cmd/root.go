@@ -4,18 +4,21 @@ import (
 	"fmt"
 	"os"
 
-	"lazyscrum/internal/config"
-	"lazyscrum/internal/store"
-	"lazyscrum/internal/tracker"
-	"lazyscrum/internal/tracker/jira"
-	"lazyscrum/internal/tui"
+	"github.com/Noah-Wilderom/lazyscrum/internal/store"
+	"github.com/Noah-Wilderom/lazyscrum/internal/tracker/jira"
+
+	"github.com/Noah-Wilderom/lazyscrum/internal/tui"
+
+	"github.com/Noah-Wilderom/lazyscrum/internal/tracker"
+
+	"github.com/Noah-Wilderom/lazyscrum/internal/config"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "lazyscrum",
+	Use:   "github.com/Noah-Wilderom/lazyscrum",
 	Short: "A TUI for managing SCRUM acceptance criteria",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		cwd, err := os.Getwd()

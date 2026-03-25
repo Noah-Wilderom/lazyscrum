@@ -6,8 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"lazyscrum/internal/config"
-	"lazyscrum/internal/tracker/jira"
+	"github.com/Noah-Wilderom/lazyscrum/internal/tracker/jira"
+
+	"github.com/Noah-Wilderom/lazyscrum/internal/config"
 
 	"github.com/spf13/cobra"
 )

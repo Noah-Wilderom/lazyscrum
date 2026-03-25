@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"lazyscrum/internal/model"
-	"lazyscrum/internal/tracker"
+	"github.com/Noah-Wilderom/lazyscrum/internal/model"
+	"github.com/Noah-Wilderom/lazyscrum/internal/tracker"
 
 	"github.com/charmbracelet/bubbles/textinput"
 	"github.com/charmbracelet/lipgloss"

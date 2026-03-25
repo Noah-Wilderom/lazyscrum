@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strings"
 
-	"lazyscrum/internal/tracker"
+	"github.com/Noah-Wilderom/lazyscrum/internal/tracker"
 )
 
 type Client struct {
@@ -42,11 +42,11 @@ type issueResponse struct {
 }
 
 type issueFields struct {
-	Summary     string          `json:"summary"`
-	Status      statusField     `json:"status"`
-	Priority    priorityField   `json:"priority"`
-	Assignee    *assigneeField  `json:"assignee"`
-	Description *adfDocument    `json:"description"`
+	Summary     string         `json:"summary"`
+	Status      statusField    `json:"status"`
+	Priority    priorityField  `json:"priority"`
+	Assignee    *assigneeField `json:"assignee"`
+	Description *adfDocument   `json:"description"`
 }
 
 // Atlassian Document Format (ADF) types

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"lazyscrum/internal/model"
+	"github.com/Noah-Wilderom/lazyscrum/internal/model"
 )
 
 // TestResolvePathFallback verifies that ResolvePath returns a non-empty path
