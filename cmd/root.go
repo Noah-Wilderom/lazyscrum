@@ -18,7 +18,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "github.com/Noah-Wilderom/lazyscrum",
+	Use:   "lazyscrum",
 	Short: "A TUI for managing SCRUM acceptance criteria",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		cwd, err := os.Getwd()
